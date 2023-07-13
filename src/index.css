@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  @apply font-mono;
+}
+
+
+@layer base{
+  li{
+  @apply text-gray-200 text-lg  hover:text-gray-300 cursor-pointer px-4;
+  }
+}
+
+@layer components{
+  .items-menu-mobile{
+    @apply text-gray-100 text-2xl cursor-pointer py-4;
+  }
+}
+
+#content-div{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  
+}
+#content-div:hover{
+  background-image: linear-gradient(
+    to right,
+    rgba(112,157,255,0.8),
+    hsla(245,74%,61%,0.8)
+  )!important;
+
+}
+
+
+
+
