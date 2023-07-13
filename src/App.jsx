@@ -1,24 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import Navbar from './components/Navbar'
-import { Main } from './components/Main'
-import About from './components/About'
-import Skills from './components/Skills'
-import Work from './components/Work'
-import Contact from './components/Contac'
 
+import './App.css'
+
+import { BrowserRouter , Route, Routes } from 'react-router-dom'
+import {HomePage} from './HomePage'
 function App() {
 
   return (
-    <div className="App">
-    <Navbar />
-    <Main />
-    <About />
-    <Skills />
-    <Work />
-    <Contact />
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path='/' exact element={<HomePage />}></Route>
+
+    </Routes>
+    </BrowserRouter>
   )
 }
 
