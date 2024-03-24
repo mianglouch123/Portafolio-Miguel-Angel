@@ -11,16 +11,24 @@ const Navbar = () => {
   const [nav,setNav] = useState(false);
 
 const handleOpenMenu = () => {
+<<<<<<< HEAD
   if(nav) {
     setNav(false)
   }else {
     setNav(true)
   }
+=======
+  return nav? setNav(false) : setNav(true);
+>>>>>>> dcb4dbfa5a9ed4a70d87752ffa5088697d0d0a3f
 
 } 
 
 
+<<<<<<< HEAD
 console.log(nav)
+=======
+
+>>>>>>> dcb4dbfa5a9ed4a70d87752ffa5088697d0d0a3f
   return (
     
     <div className='fixed w-full h-[80px] flex px-4 bg-[#0f172c] items-center justify-between shadow-sx'>
@@ -32,7 +40,11 @@ console.log(nav)
      </div>
 
      <div>
+<<<<<<< HEAD
         <ul className='hidden pr-4 cursor-pointer md:flex items-center  gap-8 font-semibold text-white'>
+=======
+        <ul className='hidden md:flex items-center  gap-8 font-bold'>
+>>>>>>> dcb4dbfa5a9ed4a70d87752ffa5088697d0d0a3f
           <li>
             <Link onClick={handleOpenMenu} to='main' smooth={true} duration={500}>Home</Link>
           </li>
@@ -59,11 +71,19 @@ console.log(nav)
      </div>
 
      {/* Menu Mobile */}
+<<<<<<< HEAD
      <ul className={`block md:hidden flex flex-col gap-16 justify-center items-center text-white text-5xl  absolute top-0 left-0 duration-300 ${nav ? 'translate-y-[-1750px]' : ""}  h-screen w-full  bg-[#070b15]`}>
      <Link onClick={handleOpenMenu} to='main' smooth={true} duration={500}>Home</Link>
      <Link onClick={handleOpenMenu} to="about" smooth={true} duration={500}>About</Link>
      <Link onClick={handleOpenMenu} to="skills" smooth={true} duration={500}>Skills</Link>
      <Link onClick={handleOpenMenu} to="contact" smooth={true} duration={500}>Contact</Link>
+=======
+     <ul className={`md:hidden absolute top-0 left-0 duration-300 translate-y-[-750px] flex items-center justify-center  flex-col h-screen w-full  bg-[#070b15] gap-8 ${nav ? "translate-y-[0px]" : ""}`}>
+     <li className='items-menu-mobile'>Home</li>
+      <li className='items-menu-mobile'>About</li>
+      <li className='items-menu-mobile'>Skills</li>
+       <li className='items-menu-mobile'>Contact</li>
+>>>>>>> dcb4dbfa5a9ed4a70d87752ffa5088697d0d0a3f
      </ul>
 
      {/* menu Icons */}
