@@ -6,7 +6,6 @@ export const Main = () => {
      
      <div className='max-w-[1000px] h-full flex justify-center px-8 -py-3 gap-2 mx-auto flex-col '>
     
-<<<<<<< HEAD
     <p className='text-slate-200 text-3xl  font-semibold '>Hola , mi nombre es </p>
     <h1 className='text-slate-200 text-5xl md:tex-5xl font-bold'>Miguel Angel Perez Meriño</h1>
     <h2 className='text-[#8892b0] font-bold text-3xl md:5xl'>Y soy desarrollador Web</h2>
@@ -14,15 +13,6 @@ export const Main = () => {
       Y soy <span className='font-normal text-3xl font-bold text-slate-300/95 '>Desarrollador Full Stack</span> especialmente
        en la construcción de sitios, implementación de funcionalidades , soluciones , componentes reutilizables ,
         construyendo sitios web responsivos ,  interfaces de usuario , creación de Api REST , modulos enfocados en el lado del backend
-=======
-    <p className='text-slate-200 text-3xl  font-semibold '>Hi, my name is</p>
-    <h1 className='text-slate-200 text-5xl md:tex-5xl font-bold'>Miguel Angel Perez Meriño</h1>
-    <h2 className='text-[#8892b0] font-bold text-3xl md:5xl'>And I'm Full Stack Developer</h2>
-    <p className='text-[#818aa5] py-2 font-normal text-2xl font-semibold md:text:2xl'>
-        I'm a <span className='font-normal text-3xl font-bold text-slate-300/95 '>Full Stack Developer</span> specializing in
-        building websites, implement's functionalitys and focused on
-        building responsive websites and building backend API REST
->>>>>>> dcb4dbfa5a9ed4a70d87752ffa5088697d0d0a3f
     </p>|
      
      <div>
