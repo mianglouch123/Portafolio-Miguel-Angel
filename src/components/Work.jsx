@@ -39,7 +39,7 @@ const Work = () => {
 
   ]
   return (
-    <div name="work" className="w-full md:h-[900px] text-gray-300 bg-[#0b1122]">
+    <div name="work" className="w-full h-[1350px] md:h-[900px] text-gray-300 bg-[#0b1122]">
         
         <div className=' max-w-[1000px] mx-auto p-4 flex-col justify-center w-full h-full'>
           
@@ -53,10 +53,10 @@ const Work = () => {
        {/*cart */}
        {LINK_WORKS.map((work , i) => (
         <div key={work.title} style={{backgroundImage:`url(${work.img})`}} id="content-div" 
-        className={`shadow-md object-container h-[240px] w-[300px] cursor-pointer shadow-[#0e1017] group container rounded-md flex justify-center items-center mx-auto`}>
+        className={`shadow-md object-container h-[150px] w-[250px] md:h-[240px] md:w-[300px] cursor-pointer shadow-[#0e1017] group container rounded-md flex justify-center items-center mx-auto`}>
          
-         <div  className='opacity-0 group-hover:opacity-100'>
-           <span className='text-slate-200 tracking-wider font-bold text-2xl'>
+         <div  className='flex flex-col items-center justify-center opacity-0 group-hover:opacity-100'>
+           <span className='text-slate-200 tracking-wider font-bold text-[16px] md:text-2xl'>
            {work.title}
            </span>
            

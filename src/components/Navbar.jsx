@@ -59,11 +59,41 @@ console.log(nav)
      </div>
 
      {/* Menu Mobile */}
-     <ul className={`block md:hidden flex flex-col gap-16 justify-center items-center text-white text-5xl  absolute top-0 left-0 duration-300 ${nav ? 'translate-y-[-1750px]' : ""}  h-screen w-full  bg-[#070b15]`}>
-     <Link onClick={handleOpenMenu} to='main' smooth={true} duration={500}>Home</Link>
-     <Link onClick={handleOpenMenu} to="about" smooth={true} duration={500}>About</Link>
-     <Link onClick={handleOpenMenu} to="skills" smooth={true} duration={500}>Skills</Link>
-     <Link onClick={handleOpenMenu} to="contact" smooth={true} duration={500}>Contact</Link>
+     
+     <ul className={`block md:hidden flex flex-col gap-16 justify-center items-center text-white text-5xl  absolute top-0 left-0 duration-300 ${!nav ? 'translate-y-[-1750px]' : ""}  h-screen w-full  bg-[#070b15]`}>
+     
+     <div className='flex flex-col items-center justify-center gap-12 mt-[200px]'>
+     <Link onClick={handleOpenMenu} to='main' smooth={true} duration={500}>Principal</Link>
+     <Link onClick={handleOpenMenu} to="about" smooth={true} duration={500}>Sobre mi</Link>
+     <Link onClick={handleOpenMenu} to="skills" smooth={true} duration={500}>Habilidades</Link>
+     <Link onClick={handleOpenMenu} to="contact" smooth={true} duration={500}>Contactame</Link>
+     
+     
+     </div>
+
+     <div></div>
+
+     <div className='flex items-center justify-center gap-8 flex flex-col'>
+     
+     <a href="https://www.linkedin.com/in/miguel-perez-088343249/" target='_blank' className='flex justify-between items-center font-semibold text-gray-300 text-[20px] '>
+          Linkedin <FaLinkedin size={38}/>
+      </a>
+
+      <a href="https://github.com/mianglouch123" target='_blank' className='flex justify-between items-center font-semibold text-gray-300 text-[20px]'>
+          Github <FaGithub size={38}/>
+      </a>
+
+      <a href="https://mail.google.com/mail/u/0/#all" target='_blank' className='flex justify-between items-center font-semibold text-gray-300 text-[20px]'>
+         Gmail <HiOutlineMail size={38}/>
+      </a>
+    
+     </div>
+
+     
+
+
+      
+        
      </ul>
 
      {/* menu Icons */}
